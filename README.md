@@ -25,7 +25,7 @@ jobs:
         id: check-changes
         uses: mskri/check-uncommitted-changes-action@v1.0.1
       - name: Evaluate if there are changes
-        if: steps.check-changes.outputs.outcome == failure()
+        if: steps.check-changes.outputs.outcome == failure
         run: echo "There are uncommitted changes"
 ```
 
